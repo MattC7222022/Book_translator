@@ -6,9 +6,11 @@ This requires you have an Ollama LLM capable of language translation locally ins
 I recommend using a custom model following these instructions:
 https://github.com/ollama/ollama/blob/main/docs/modelfile.md
 Once you have a model file, create the model with this instruction:
+
 ollama create translator -f PATH_TO_MODELFILE
 
 Here is the modelfile I use:
+
 FROM deepseek-r1:32b
 
 PARAMETER num_ctx 8192
